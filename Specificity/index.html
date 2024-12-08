@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1. */
+        h1{
+            color: aqua;
+        }
+        /* The specificity of this selector is 11. */
+        h1.yellow{
+            color: yellow;
+        }
+        
+        /* The specificity of this selector is 10. */
+        .cred{
+            color: red;
+        }
+
+        /* The specificity of this selector is 10000. */
+        .cpurple{
+            color: purple !important;
+        }
+
+        /* The specificity of this selector is 10. */
+        /* Attribute Selector */
+        [data-x=a]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- style="color: blue;" -->
+    <h1  class="yellow cred cpurple" data-x="a">Css Specificity</h1>
+</body>
+</html>

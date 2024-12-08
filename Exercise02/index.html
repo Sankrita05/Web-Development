@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Element Selector */
+        div {
+            background-color: maroon;
+        }
+
+        /* class Selector */
+        .red{
+            color: aqua;
+        }
+
+        /* Id Selector */
+        #id{
+            color: blueviolet;
+        }
+
+        /* Child Selector */
+        div>p{
+            background-color: blue;
+        }
+
+        /* Descendent Selector */
+        div p{
+            background-color: chocolate;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0%;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: yellowgreen;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: yellow; background-color: red;">Three Ways to add css to HTML</h1>
+    <div class="red">
+        <ol>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ol>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, eum?</p>
+
+    <div>
+        <p>
+            I am in div.
+        </p>
+    </div>
+
+    <div>
+        <article>
+            <p>
+                I am in div.
+            </p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+</html>
